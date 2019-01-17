@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Celebrity Dating</title>
   </head>
   <body>
@@ -13,42 +13,43 @@
       <form id="person">
         <h4>What do you do in your free time?</h4>
         <select class="form-control" id="activity">
-          <option id="Ch1">Exercise</option>
-          <option id="E1">Play Music</option>
-          <option id="M1">Watch Movies</option>
-          <option id="C1">Hang Out with Friends</option>
+          <option value="1">Exercise</option>
+          <option value="2">Play Music</option>
+          <option value="2">Watch Movies</option>
+          <option value="1">Hang Out with Friends</option>
         </select>
         <h4>What type of beverage would you enjoy?</h4>
         <select class="form-control" id="beverage">
-          <option id="M2">Water</option>
-          <option id="C2">Red Wine</option>
-          <option id="E2">Whiskey</option>
-          <option id="Ch2">Black Coffee</option>
+          <option value="1">Water</option>
+          <option value="2">Red Wine</option>
+          <option value="2" id="E2">Whiskey</option>
+          <option value="1" id="Ch2">Black Coffee</option>
         </select>
         <h4>What is your favorite season?</h4>
         <select class="form-control" id="seasons">
-          <option id="Ch3">Winter</option>
-          <option id="C3">Spring</option>
-          <option id="M3">Summer</option>
-          <option id="E3">Autumn</option>
+          <option value="1">Winter</option>
+          <option value="2">Spring</option>
+          <option value="1">Summer</option>
+          <option value="2">Autumn</option>
         </select>
         <h4>What kinds of movies do you like?</h4>
         <select class="form-control" id="movies">
-          <option id="C4">Comedy</option>
-          <option id="E4">Drama</option>
-          <option id="Ch4">Sports</option>
-          <option id="M4">Action</option>
+          <option value="2">Comedy</option>
+          <option value="2">Drama</option>
+          <option value="1">Sports</option>
+          <option value="1">Action</option>
         </select>
         <h4>How do you feel about crocs?</h4>
         <select class="form-control" id="crocs">
-          <option id="C5">"Heeeeeeell nah!"</option>
-          <option id="Ch5">"They're cute or whatever."</option>
-          <option id="E5">"Eh..."</option>
-          <option id="M5">"Not my thing"</option>
+          <option value="2">"Heeeeeeell nah!"</option>
+          <option value="1">"They're cute or whatever."</option>
+          <option value="2">"Eh..."</option>
+          <option value="1">"Not my thing"</option>
         </select>
+        <button id="submitButton" type="button" class="btn btn-success">Submit!</button>
       </form>
 
-
+      <img id="chloe" src="img/chloe.jpg" alt="Chloe Kim" width="400px">
 
     </div>
   </body>
