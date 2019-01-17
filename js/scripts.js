@@ -5,12 +5,29 @@ $(function(){
     var seasonsOption = $("#seasons").val();
     var moviesOption = $("#movies").val();
     var crocsOption = $("#crocs").val();
+    var chloe = 0;
 
 
-    if (activityOption === "1" || beverageOption === "1" || seasonsOption === "1" || moviesOption === "1" || crocsOption === "1") {
-      if (activityOption === "1" || beverageOption === "1" || seasonsOption === "1" || moviesOption === "1" || crocsOption === "1"){
-        $("#chloe").show();
-      }
+    if (activityOption === "1"){
+      chloe += 1;
+    }
+    if (beverageOption === "1"){
+      chloe += 1;
+    }
+    if (seasonsOption === "1"){
+      chloe += 1;
+    }
+    if (moviesOption === "1"){
+      chloe += 1;
+    }
+    if (crocsOption === "1"){
+      chloe += 1;
+    }
+
+    if (chloe >= 3){
+      $("#chloe").show();
+    } else {
+      $("#sheeran").show();
     }
 
 
